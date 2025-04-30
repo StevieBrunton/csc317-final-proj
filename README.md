@@ -1,7 +1,7 @@
 # Overview
 This is the final project for CSC230 at SFSU.
 
-[Deployment URL](https://future-panoramic-shawl.glitch.me/)
+[Deployment URL](https://curved-alike-sphere.glitch.me/)
 
 ## Getting Started
 ### Installing Dependencies
@@ -30,7 +30,7 @@ system before running the project:
 2. Configure the following `secrets` in Github:
 
 ```
-GlitchGitURL # URL to Glitch git deployment
+GLITCH_GIT_URL # URL to Glitch git deployment
 ```
 
 ### Troubleshooting
