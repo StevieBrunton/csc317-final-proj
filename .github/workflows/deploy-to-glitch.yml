@@ -1,0 +1,24 @@
+name: Deploy to Glitch
+
+on:
+  push:
+    branches:
+      - main  # or use 'dev' if that's your main working branch
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Push to Glitch
+        env:
+          GLITCH_GIT_URL: ${{ secrets.GLITCH_GIT_URL }}
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+
+          git remote add glitch "$GLITCH_GIT_URL"
+          git push -f glitch HEAD:master
