@@ -30,7 +30,8 @@ system before running the project:
 2. Configure the following `secrets` in Github:
 
 ```
-GLITCH_GIT_URL # URL to Glitch git deployment
+[GLITCH_GIT_URL # URL to Glitch git deployment](https://25421e21-7c78-42b5-9b90-d31fe8db20c8@api.glitch.com/git/reinvented-flicker-twilight
+)
 ```
 
 ### Troubleshooting
